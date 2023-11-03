@@ -9,3 +9,9 @@ imgIndicator.forEach(element => {
         document.querySelector('.main-img').attributes.src.textContent = srcImgIndicator;
     })
 });
+const editBtn = document.querySelector('.btn-edit');
+const popUp = document.querySelector('.popup');
+editBtn.addEventListener('click',function(){
+    popUp.classList.toggle('active');
+    document.body.classList.toggle('active');
+})

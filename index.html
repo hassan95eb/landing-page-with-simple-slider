@@ -10,7 +10,8 @@
     <title>New js Project</title>
   </head>
 
-  <body ondragstart="return false;" oncontextmenu="return false;" ondrop="return false;">
+  <body ondragstart="return false;" ondrop="return false;">
+    <!--oncontextmenu="return false;"-->
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
@@ -46,16 +47,21 @@
     <section class="main">
       <div class="slider">
         <div class="container">
-            <div class="row justify-content-center align-items-center">
-              <div class="col-12 col-lg-6">
-                <h2 class="text-center h2-slider">Dodge SRT Demon</h2>
-              </div>
-              <div class="col-12 col-lg-6">
-                <img src="./assest/images/demon.png" alt="dodge" class="main-img img-fluid"/>
-              </div>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-lg-6">
+              <h2 class="text-center h2-slider">Dodge SRT Demon</h2>
+            </div>
+            <div class="col-12 col-lg-6">
+              <img
+                src="./assest/images/demon.png"
+                alt="dodge"
+                class="main-img img-fluid"
+              />
             </div>
           </div>
+        </div>
       </div>
+      <!--delete this secction for use from image alt for h2 tag in slider-->
       <!-- <div class="slider d-none">
         <div class="container">
             <div class="row justify-content-center align-items-center">
@@ -80,15 +86,64 @@
             </div>
           </div>
       </div> -->
+      <div class="edit">
+        <button class="btn-edit bg-primary-subtle">
+          <img
+            src="./assest/images/operations-icon.svg"
+            alt="edit icon"
+            class="edit-svg"
+          />
+        </button>
+      </div>
     </section>
     <div class="indicator">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-3 col-md-2 text-center"><img src="./assest/images/benz2016.png" class="img-fluid img-indicator" alt="BENZ 2016"></div>
-            <div class="col-3 col-md-2 text-center"><img src="./assest/images/bmwm2.png" class="img-fluid img-indicator" alt="BMW M2"></div>
-            <div class="col-3 col-md-2 text-center"><img src="./assest/images/demon.png" class="img-fluid img-indicator" alt="Dodge SRT Demon"></div>
+      <div class="row justify-content-center align-items-center">
+        <div class="col-3 col-md-2 text-center">
+          <img
+            src="./assest/images/benz2016.png"
+            class="img-fluid img-indicator"
+            alt="BENZ 2016"
+          />
         </div>
+        <div class="col-3 col-md-2 text-center">
+          <img
+            src="./assest/images/bmwm2.png"
+            class="img-fluid img-indicator"
+            alt="BMW M2"
+          />
+        </div>
+        <div class="col-3 col-md-2 text-center">
+          <img
+            src="./assest/images/demon.png"
+            class="img-fluid img-indicator"
+            alt="Dodge SRT Demon"
+          />
+        </div>
+      </div>
     </div>
-
+    <div class="popup">
+      <div class="container">
+        <div class="popup-box d-flex justify-content-center flex-column align-items-center">
+          <h3>Slider Setting</h3>
+          <hr class="w-100 d-block" />
+          <form class="edit-form" id="edit-form">
+            <div class="container">
+              <div class="title-form my-2 row align-items-center">
+                <label for="title-image" class="col-4">Name:</label>
+                <input type="text" class="col-8" name="title new image" id="title-image" placeholder="Write Name for pic">
+              </div>
+              <div class="pic-form my-2 row align-items-center">
+                <label for="new-pic" class="col-4">Upload Img:</label>
+              <input type="file" class="col-8" name="slider-pic" id="new-pic" class="btn-upload" />
+            </div>
+            <div class="submit-form">
+              <input type="submit" value="send">
+            </div>
+          </form>
+            </div>
+        </div>
+      </div>
+    </div>
     <script src="./assest/js/jquery.js"></script>
     <script src="./assest/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/73ee758e35.js"></script>
